@@ -1,0 +1,19 @@
+
+<div class="img-rounded project_intro">
+    <h1>Purpose</h1>
+        <p>The purpose of these simple projects is to give the reader a small idea of what i have worked with and also serve as a resource for others to look at and maybe learn a bit(or if you find errors please let me know, I would actually really appreciate that). Note that these are not perfect projects that have gone through extensive testing.</p>
+</div>
+<div class="img-rounded project_intro" ng-controller="repeatController"> 
+    <h1>Projects</h1>
+    <div ng-repeat="project in projects">
+        <h2 class="project_title">{{project.name}}</h2>
+        <div class="row project_pic">
+            <div class="col-sm-8"> <img src={{project.image}} class="img-rounded" width="100%"></div>
+        </div>
+        <div class="row project_intro project_des">
+            <p>{{project.description}}</p>
+            <p><i>Tech Used:{{project.tech}}</i></p>
+        </div>
+    </div>
+</div>
+<footer></footer>
